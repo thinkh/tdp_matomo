@@ -42,7 +42,7 @@ def to_version(v):
 
 setup(
   name=pkg['name'].lower(),
-  version='1.0.1', #to_version(pkg['version']),
+  version='1.0.1.dev2', #to_version(pkg['version']),
   url=pkg['homepage'],
   description=pkg['description'],
   long_description=read_it('README.md'),
