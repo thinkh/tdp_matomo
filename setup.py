@@ -38,7 +38,7 @@ def requirements(file):
 def to_version(v):
   import datetime
   now = datetime.datetime.utcnow()
-  return v.replace('SNAPSHOT', now.strftime('%Y%m%d-%H%M%S'))
+  return v.replace('-SNAPSHOT', '.' + now.strftime('%Y%m%d-%H%M%S'))
 
 setup(
   name=pkg['name'].lower(),
